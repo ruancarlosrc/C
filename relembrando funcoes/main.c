@@ -3,14 +3,13 @@
 
 int main()
 {
-    char nome1;
+    char nome[10];
     printf("Ola, qual seu nome?");
-    scanf("%c", nome1);
-    printf( nome1);
-    diga_boanoite();
+    scanf("%s", nome);
+    diga_boanoite(nome);
     return 0;
 }
 
-void diga_boanoite(){
-    printf("Boa noite!");
+void diga_boanoite(char nome[]){
+    printf(" Boa noite %s!", nome);
 }
